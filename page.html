@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SKPK Gadget</title>
+    </head>
+    <body>
+        <div id="produk">
+
+        </div>
+
+            <script src="database.js"></script>
+
+            <script type="text/javascript">
+                let hasil = "";
+                for (index in Hp) {
+                    hasil += "<h1> "+Hp[index].Nama+"</h1>";
+                    hasil +="<img src='"+Hp[index].Foto+"' width='300'>";
+                    hasil += "<h3>"+Hp[index].Harga+"</h3>";
+                  hasil+="<button>Masukan ke keranjang</button><br><br>";
+                    
+                    
+
+
+                   }
+                document.getElementById("produk").innerHTML = hasil;
+
+            </script>
+
+    </body>
+</html>
+
+    
